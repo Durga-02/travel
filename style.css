@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: #ecf1f1;
+}
+:root {
+  --primary-color: #2d2727;
+  --light-primary-color: #2d2727;
+  --secondary-color: #8f43ee;
+  --text-color: #0e8388;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.logo-section .logo {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e8388;
+  font-family: "bebas neue", sans-serif;
+}
+
+.call {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
+
+.call #ph {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: green;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search {
+  height: 2.5rem;
+  width: 30px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 90%;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  box-sizing: 0px 0px 10px 1px red;
+}
+.search label {
+  margin-left: -2rem;
+  font-size: 1rem;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--light-primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  box-shadow: 0px 0px 40px 0px rgba(red, green, blue, alpha);
+}
+.header .navbar {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 20%;
+}
+.header .navbar a,
+.header .account a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-left: 10px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.header .navbar a:hover,
+.header .account a:hover {
+  color: var(--text-color);
+}
+.header .account {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 60%;
+}
+
+.image img {
+  width: 100%;
+  height: 45rem;
+}
+.content {
+  top: 300px;
+  right: 0%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d27272f;
+  width: 100%;
+}
+.content p,
+.content h1 {
+  font-family: "kaushan script", cursive;
+  margin-bottom: 1%;
+}
+.content h1 {
+  font-size: 4rem;
+  color: palevioletred;
+}
+.content p {
+  font-size: 2rem;
+  color: rgb(245, 245, 248);
+}
+.content a {
+  text-decoration: none;
+  font-size: 2rem;
+  /* background-color:#0e8388;*/
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  color: orange;
+  border: 0.2rem solid rgb(203, 219, 219);
+  transition: 0.3s;
+}
+.content a:hover {
+  background-color: #0e8388;
+  color: orange;
+  font-size: 2.2rem;
+}
+.from-to {
+  background-color: skyblue;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.from-to h1 {
+  font-size: 1.5rem;
+  padding: 1rem 0 0 1rem;
+  display: inline-block;
+}
+
+.fo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.form-details p {
+  font-size: 1.5rem;
+  color: white;
+}
+.form-details select,
+.form-details input {
+  outline: none;
+  border: none;
+  height: 2.5rem;
+  width: 10rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+option {
+  outline: none;
+  border: none;
+}
+.hotel > p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.Popular-details {
+  display: flex;
+  justify-content: space-between;
+}
+.pic img {
+  width: 400px;
+  height: 200px;
+  margin-left: 30px;
+}
+.pic .room-detail a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #0c0c0c;
+}
+.hotel-name a {
+  margin-left: 30px;
+}
+
+.deals .pics img {
+  width: 40rem;
+  height: 20rem;
+  border-radius: 0.2rem;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.deals > p {
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+}
+.footer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.footer .company {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  text-decoration: none;
+  color: #ccd3d3;
+  font-size: 1.3rem;
+}
+.footer .customer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+.follow .social {
+  display: flex;
+}
+.social img {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
